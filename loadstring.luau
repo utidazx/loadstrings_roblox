@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/utidazx/loadstrings_roblox/main/bloxstrike-esp.luau"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/utidazx/loadstrings_roblox/main/bloxstrike.luau"))()
