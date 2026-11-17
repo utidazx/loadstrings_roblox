@@ -15,7 +15,7 @@ local compile,problem=loadstring(source)
 assert(compile,"Unable to compile the access interface: "..tostring(problem))
 local library=compile()
 local accessWindow=library:CreateWindow({
-    Title="BloxStrike",Folder="BloxStrikeAccess",Icon="key-round",
+    Title="BloxStrike - Utida hub",Folder="BloxStrikeAccess",Icon="key-round",
     Size=UDim2.fromOffset(540,380),MinSize=Vector2.new(480,340),MaxSize=Vector2.new(680,500),
     Theme="Dark",Transparent=false,NewElements=true,
     OpenButton={Enabled=false},ToggleKey=Enum.KeyCode.RightShift,
@@ -44,7 +44,7 @@ accessTab:Button({Title="Get key",Icon="external-link",Callback=function()
             local sdk=sdkLoader()
             sdk.service="BloxStrike WindUI"
             sdk.identifier="1234166"
-            sdk.provider="BloxStrike - LootLabs"
+            sdk.provider="BloxStrike - Utida hub"
             local url,message=sdk.get_key_link()
             assert(type(url)=="string" and url:match("^https://"),message or "Key link unavailable")
             return url
